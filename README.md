@@ -6,7 +6,7 @@ OpenVoiceOS STT plugin for [Whisper-LM-transformers](https://github.com/hitz-zen
 
 `pip install ovos-stt-plugin-whisper-lm`
 
-> NOTE: only **python <=3.11** supported by some of the dependencies
+> ⚠️ only **python <=3.11** supported by some of the dependencies
 
 ## Models
 
@@ -21,9 +21,11 @@ Each lm_model is built using the KenLM toolkit and is based on n-gram statistics
 
 Finetuned whisper models are also available from [Xabier Zuazo](https://huggingface.co/zuazo) for those languages
 
+Instead of a ngram model it is also possible to use a LLM such as [latxa](https://huggingface.co/collections/HiTZ/latxa-65a697e6838b3acc53677304)
 
 ## Configuration
 
+In the example below, we use [HiTZ Basque KenLM model](https://huggingface.co/HiTZ/whisper-lm-ngrams). Optimize the `lm_alpha`, `lm_beta`, etc., for best results with your own models.
 
 ```json
   "stt": {
@@ -38,12 +40,29 @@ Finetuned whisper models are also available from [Xabier Zuazo](https://huggingf
     }
   }
 ```
+> 💡 `lm_repo` only needs to be set if you want to specify a specific filename in `lm_model`
+
+
+To use an LLM instead of a ngram model
+
+```json
+  "stt": {
+    "module": "ovos-stt-plugin-whisper",
+    "ovos-stt-plugin-whisper": {
+        "model": "zuazo/whisper-medium-eu",
+        "lm_model": "HiTZ/latxa-7b-v1.2",
+        "lm_alpha": 0.33582369,
+        "lm_beta": 0.68825565,
+        "use_cuda": true
+    }
+  }
+```
+> ⚠️ Running large LMs side-by-side with Whisper requires sufficient GPU memory.
 
 
 ## Credits
 
 ![](img.png)
-
 
 > This plugin was funded by the Ministerio para la Transformación Digital y de la Función Pública and Plan de Recuperación, Transformación y Resiliencia - Funded by EU – NextGenerationEU within the framework of the project ILENIA with reference 2022/TL22/00215337
 
