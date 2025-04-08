@@ -60,7 +60,7 @@ setup(
     author='JarbasAi',
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
-    packages=['ovos_stt_plugin_whisper'],
+    packages=['ovos_stt_plugin_whisper_lm'],
     install_requires=required("requirements/requirements.txt"),
     zip_safe=True,
     classifiers=[
