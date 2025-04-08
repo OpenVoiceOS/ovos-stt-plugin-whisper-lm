@@ -14,7 +14,7 @@ class WhisperLMSTT(STT):
         super().__init__(*args, **kwargs)
         model = self.config.get("model")
         lm_model = self.config.get("lm_model")
-        lm_repo = self.config.get("lm_repo", "HiTZ/whisper-lm-ngrams")
+        lm_repo = self.config.get("lm_repo")
         lm_alpha = self.config.get("lm_alpha", 0.33582369)
         lm_beta = self.config.get("lm_beta", 0.68825565)
         lang = self.lang.split("-")[0]
@@ -23,6 +23,7 @@ class WhisperLMSTT(STT):
             if lang not in langs:
                 raise ValueError(f"For pretrained models language must be in {langs}")
             lm_model = f"5gram-{lang}.bin"
+            lm_repo = "HiTZ/whisper-lm-ngrams"
             if not model:
                 model = f"zuazo/whisper-medium-{lang}"
         if not model:
@@ -38,7 +39,8 @@ class WhisperLMSTT(STT):
             else:
                 device = "cuda"
 
-        lm_model = hf_hub_download(repo_id=lm_repo, filename=lm_model)
+        if lm_repo:
+            lm_model = hf_hub_download(repo_id=lm_repo, filename=lm_model)
         self.pipe = pipeline(
             "whisper-with-lm",
             model=model,
