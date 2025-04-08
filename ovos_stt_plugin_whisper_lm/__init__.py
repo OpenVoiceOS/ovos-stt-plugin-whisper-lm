@@ -51,7 +51,7 @@ class WhisperLMSTT(STT):
         )
 
     def execute(self, audio, language=None):
-        if language and language.split("-")[0] != self.lang:
+        if language and language != "auto" and language.split("-")[0] != self.lang.split("-")[0]:
             raise ValueError(f"Whisper with LM does not support dynamic language, only {self.lang} supported")
         result = self.pipe(audio.get_wav_data())
         return result["text"]
@@ -63,7 +63,8 @@ class WhisperLMSTT(STT):
 
 
 if __name__ == "__main__":
-    b = WhisperLMSTT({"use_cuda": True, "lang": "eu"})
+    from ovos_stt_plugin_whisper_lm import WhisperLMSTT
+    b = WhisperLMSTT({"lang": "eu"})
 
     from speech_recognition import Recognizer, AudioFile
 
