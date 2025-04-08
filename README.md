@@ -51,8 +51,8 @@ To use an LLM instead of a ngram model
     "ovos-stt-plugin-whisper-lm": {
         "model": "zuazo/whisper-medium-eu",
         "lm_model": "HiTZ/latxa-7b-v1.2",
-        "lm_alpha": 0.33582369,
-        "lm_beta": 0.68825565,
+        "lm_alpha": 2.73329396,
+        "lm_beta": 0.00178595,
         "use_cuda": true
     }
   }
