@@ -19,8 +19,9 @@ class WhisperLMSTT(STT):
         lm_beta = self.config.get("lm_beta", 0.68825565)
         lang = self.lang.split("-")[0]
         if not lm_model:
-            if lang not in self.available_languages:
-                raise ValueError(f"For pretrained models language must be in {self.available_languages}")
+            langs = {"gl", "es", "eu", "ca"}
+            if lang not in langs:
+                raise ValueError(f"For pretrained models language must be in {langs}")
             lm_model = f"5gram-{lang}.bin"
             lm_repo = "HiTZ/whisper-lm-ngrams"
             if not model:
@@ -46,24 +47,23 @@ class WhisperLMSTT(STT):
             lm_model=lm_model, # Provide a kenlm model path
             lm_alpha=lm_alpha,
             lm_beta=lm_beta,
-            language="eu",
+            language=lang,
             device=device
         )
 
     def execute(self, audio, language=None):
-        if language and language != "auto" and language.split("-")[0] != self.lang.split("-")[0]:
-            raise ValueError(f"Whisper with LM does not support dynamic language, only {self.lang} supported")
+        # NOTE: language is tied to the language model loaded
+        #  non-sense is to be expected if audio language doesn't match
         result = self.pipe(audio.get_wav_data())
         return result["text"]
 
     @property
     def available_languages(self) -> set:
-        return {"gl", "es", "eu", "ca"}
+        return {self.lang, }
 
 
 
 if __name__ == "__main__":
-    from ovos_stt_plugin_whisper_lm import WhisperLMSTT
     b = WhisperLMSTT({"lang": "eu"})
 
     from speech_recognition import Recognizer, AudioFile
