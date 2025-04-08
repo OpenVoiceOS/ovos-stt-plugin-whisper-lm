@@ -1,0 +1,6 @@
+ovos-plugin-manager>=0.0.26,<1.0.0
+SpeechRecognition>=3.8.1
+requests
+transformers
+kenlm
+whisper-lm-transformers
