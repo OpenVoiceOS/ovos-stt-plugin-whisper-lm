@@ -29,8 +29,8 @@ In the example below, we use [HiTZ Basque KenLM model](https://huggingface.co/Hi
 
 ```json
   "stt": {
-    "module": "ovos-stt-plugin-whisper",
-    "ovos-stt-plugin-whisper": {
+    "module": "ovos-stt-plugin-whisper-lm",
+    "ovos-stt-plugin-whisper-lm": {
         "model": "zuazo/whisper-medium-eu",
         "lm_repo": "HiTZ/whisper-lm-ngrams",
         "lm_model": "5gram-eu.bin",
@@ -47,8 +47,8 @@ To use an LLM instead of a ngram model
 
 ```json
   "stt": {
-    "module": "ovos-stt-plugin-whisper",
-    "ovos-stt-plugin-whisper": {
+    "module": "ovos-stt-plugin-whisper-lm",
+    "ovos-stt-plugin-whisper-lm": {
         "model": "zuazo/whisper-medium-eu",
         "lm_model": "HiTZ/latxa-7b-v1.2",
         "lm_alpha": 0.33582369,
