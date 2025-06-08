@@ -1,12 +1,10 @@
-from huggingface_hub import hf_hub_download
-
 import torch
+import whisper_lm_transformers  # Required to register the new pipeline
+from huggingface_hub import hf_hub_download
 from ovos_plugin_manager.templates.stt import STT
+from ovos_utils import classproperty
 from ovos_utils.log import LOG
 from transformers import pipeline
-
-import whisper_lm_transformers  # Required to register the new pipeline
-
 
 
 class WhisperLMSTT(STT):
@@ -44,7 +42,7 @@ class WhisperLMSTT(STT):
         self.pipe = pipeline(
             "whisper-with-lm",
             model=model,
-            lm_model=lm_model, # Provide a kenlm model path
+            lm_model=lm_model,  # Provide a kenlm model path
             lm_alpha=lm_alpha,
             lm_beta=lm_beta,
             language=lang,
@@ -57,10 +55,9 @@ class WhisperLMSTT(STT):
         result = self.pipe(audio.get_wav_data())
         return result["text"]
 
-    @property
-    def available_languages(self) -> set:
-        return {self.lang, }
-
+    @classproperty
+    def available_languages(cls) -> set:
+        return {"gl", "es", "eu", "ca"}
 
 
 if __name__ == "__main__":
