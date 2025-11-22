@@ -1,12 +1,12 @@
 # Changelog
 
-## [0.0.5a1](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.5a1) (2025-06-08)
+## [0.0.6a1](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a1) (2025-11-22)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.4...0.0.5a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.5...0.0.6a1)
 
 **Merged pull requests:**
 
-- fix: compatibility with ovos-plugin-manager 1.X.X [\#9](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/pull/9) ([JarbasAl](https://github.com/JarbasAl))
+- Update requirements.txt [\#11](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/pull/11) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
