@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.6a3](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a3) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.6a2...0.0.6a3)
+
+**Merged pull requests:**
+
+- Update actions/setup-python action to v6 [\#18](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/pull/18) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [0.0.6a2](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a2) (2025-12-18)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.6a1...0.0.6a2)
