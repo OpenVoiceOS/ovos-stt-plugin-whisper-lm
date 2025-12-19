@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.6a4](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a4) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.6a3...0.0.6a4)
+
+**Merged pull requests:**
+
+- Update pilosus/action-pip-license-checker action to v3 [\#19](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/pull/19) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [0.0.6a3](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a3) (2025-12-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.6a2...0.0.6a3)
