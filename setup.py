@@ -70,5 +70,5 @@ setup(
         'License :: OSI Approved :: Apache Software License'
     ],
     keywords='mycroft ovos plugin stt',
-    entry_points={'mycroft.plugin.stt': PLUGIN_ENTRY_POINT}
+    entry_points={'opm.stt': PLUGIN_ENTRY_POINT}
 )
