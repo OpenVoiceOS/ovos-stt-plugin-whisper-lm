@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.6a6](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a6) (2026-01-09)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.6a5...0.0.6a6)
+
+**Merged pull requests:**
+
+- refactor: modernize/drop speech\_recognition [\#22](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/pull/22) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.0.6a5](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a5) (2025-12-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.6a4...0.0.6a5)
