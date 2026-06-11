@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.6a7](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a7) (2026-06-11)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.6a6...0.0.6a7)
+
+**Merged pull requests:**
+
+- docs: add TigreGotico attribution, link ILENIA [\#23](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/pull/23) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.0.6a6](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a6) (2026-01-09)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.6a5...0.0.6a6)
