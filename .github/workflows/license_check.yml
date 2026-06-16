@@ -13,3 +13,9 @@ jobs:
       # kenlm 0.3.0 (only PyPI release) fails to compile on Python 3.13+
       # (uses private CPython C-API removed in 3.13); 3.12 builds the wheel fine.
       python_version: '3.12'
+      # torch pulls NVIDIA CUDA runtime wheels (proprietary-but-redistributable) and a
+      # couple of packages that ship no parseable license metadata. They are runtime
+      # backend deps, not part of this plugin's distributable surface; exclude them from
+      # the copyleft/Other/Error gate. kenlm reports no license metadata ("Error").
+      exclude_packages: >-
+        (?i:^nvidia-.*([=<>!~ @;].*)?$)|(?i:^cuda-bindings([=<>!~ @;].*)?$)|(?i:^cuda-toolkit([=<>!~ @;].*)?$)|(?i:^kenlm([=<>!~ @;].*)?$)
