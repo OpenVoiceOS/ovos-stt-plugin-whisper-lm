@@ -11,4 +11,11 @@ jobs:
     secrets: inherit
     with:
       python_versions: '["3.10", "3.11", "3.12", "3.13", "3.14"]'
+      # PyPI kenlm 0.3.0 ships a pre-generated Cython source that uses private
+      # CPython C-API symbols removed in 3.13+, so its wheel fails to compile on
+      # 3.13/3.14. Install kenlm from a source tree whose Cython output was
+      # regenerated for 3.13+ before building this package, so the bare `kenlm`
+      # runtime requirement is already satisfied.
+      pre_install_pip: 'kenlm@git+https://github.com/kpu/kenlm@23721cdb04fb482ee85c94df6fea1eabe5276016'
+      install_extras: 'test'
       test_path: 'test'

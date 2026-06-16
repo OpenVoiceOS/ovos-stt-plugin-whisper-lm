@@ -26,6 +26,9 @@ dependencies = [
     "whisper-lm-transformers",
 ]
 
+[project.optional-dependencies]
+test = ["pytest"]
+
 [project.urls]
 Homepage = "https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm"
 
