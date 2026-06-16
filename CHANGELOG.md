@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.6a9](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a9) (2026-06-16)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.6a7...0.0.6a9)
+
+**Merged pull requests:**
+
+- chore: add missing shared CI workflows [\#24](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/pull/24) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.0.6a7](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a7) (2026-06-11)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.6a6...0.0.6a7)
