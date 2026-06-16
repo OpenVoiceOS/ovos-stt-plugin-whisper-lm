@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.6a10](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a10) (2026-06-16)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.6a9...0.0.6a10)
+
+**Merged pull requests:**
+
+- ci: exclude NVIDIA CUDA/kenlm/soxr from license gate [\#26](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/pull/26) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.0.6a9](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a9) (2026-06-16)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.6a7...0.0.6a9)
