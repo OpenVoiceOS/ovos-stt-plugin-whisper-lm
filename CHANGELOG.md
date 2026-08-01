@@ -1,12 +1,84 @@
 # Changelog
 
-## [0.0.5a1](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.5a1) (2025-06-08)
+## [0.0.6a11](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a11) (2026-08-01)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.4...0.0.5a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.6a10...0.0.6a11)
 
 **Merged pull requests:**
 
-- fix: compatibility with ovos-plugin-manager 1.X.X [\#9](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/pull/9) ([JarbasAl](https://github.com/JarbasAl))
+- docs: rewrite README in Simplified Technical English [\#28](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/pull/28) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.0.6a10](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a10) (2026-06-16)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.6a9...0.0.6a10)
+
+**Merged pull requests:**
+
+- ci: exclude NVIDIA CUDA/kenlm/soxr from license gate [\#26](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/pull/26) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.0.6a9](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a9) (2026-06-16)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.6a7...0.0.6a9)
+
+**Merged pull requests:**
+
+- chore: add missing shared CI workflows [\#24](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/pull/24) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.0.6a7](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a7) (2026-06-11)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.6a6...0.0.6a7)
+
+**Merged pull requests:**
+
+- docs: add TigreGotico attribution, link ILENIA [\#23](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/pull/23) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.0.6a6](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a6) (2026-01-09)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.6a5...0.0.6a6)
+
+**Merged pull requests:**
+
+- refactor: modernize/drop speech\_recognition [\#22](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/pull/22) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.0.6a5](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a5) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.6a4...0.0.6a5)
+
+**Merged pull requests:**
+
+- Update dependency python to 3.14 [\#14](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/pull/14) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [0.0.6a4](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a4) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.6a3...0.0.6a4)
+
+**Merged pull requests:**
+
+- Update pilosus/action-pip-license-checker action to v3 [\#19](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/pull/19) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [0.0.6a3](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a3) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.6a2...0.0.6a3)
+
+**Merged pull requests:**
+
+- Update actions/setup-python action to v6 [\#18](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/pull/18) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [0.0.6a2](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a2) (2025-12-18)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.6a1...0.0.6a2)
+
+**Merged pull requests:**
+
+- chore: Configure Renovate [\#13](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/pull/13) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [0.0.6a1](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a1) (2025-11-22)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.5...0.0.6a1)
+
+**Merged pull requests:**
+
+- Update requirements.txt [\#11](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/pull/11) ([JarbasAl](https://github.com/JarbasAl))
 
 
 

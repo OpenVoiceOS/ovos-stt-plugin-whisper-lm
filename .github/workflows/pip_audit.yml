@@ -1,0 +1,15 @@
+name: PIP Audit
+
+on:
+  pull_request:
+    branches: [dev]
+  workflow_dispatch:
+
+jobs:
+  pip_audit:
+    uses: OpenVoiceOS/gh-automations/.github/workflows/pip-audit.yml@dev
+    secrets: inherit
+    with:
+      # kenlm 0.3.0 (only PyPI release) fails to compile on Python 3.13+
+      # (uses private CPython C-API removed in 3.13); 3.12 builds the wheel fine.
+      python_version: '3.12'

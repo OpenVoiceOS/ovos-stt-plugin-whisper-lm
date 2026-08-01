@@ -5,6 +5,8 @@ from ovos_plugin_manager.templates.stt import STT
 from ovos_utils import classproperty
 from ovos_utils.log import LOG
 from transformers import pipeline
+from ovos_plugin_manager.utils.audio import AudioData, AudioFile
+from typing import Optional
 
 
 class WhisperLMSTT(STT):
@@ -49,7 +51,7 @@ class WhisperLMSTT(STT):
             device=device
         )
 
-    def execute(self, audio, language=None):
+    def execute(self, audio: AudioData, language: Optional[str]=None):
         # NOTE: language is tied to the language model loaded
         #  non-sense is to be expected if audio language doesn't match
         result = self.pipe(audio.get_wav_data())
@@ -63,11 +65,9 @@ class WhisperLMSTT(STT):
 if __name__ == "__main__":
     b = WhisperLMSTT({"lang": "eu"})
 
-    from speech_recognition import Recognizer, AudioFile
-
     jfk = "/home/miro/PycharmProjects/whisper-lm-transformers/tests/data/audio.wav"
     with AudioFile(jfk) as source:
-        audio = Recognizer().record(source)
+        audio = source.read()
 
     a = b.execute(audio)
     print(a)
