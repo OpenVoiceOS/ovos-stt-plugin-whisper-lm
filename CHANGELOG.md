@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.6a11](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a11) (2026-08-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.6a10...0.0.6a11)
+
+**Merged pull requests:**
+
+- docs: rewrite README in Simplified Technical English [\#28](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/pull/28) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.0.6a10](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/tree/0.0.6a10) (2026-06-16)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-stt-plugin-whisper-lm/compare/0.0.6a9...0.0.6a10)
